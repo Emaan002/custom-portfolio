@@ -1,0 +1,56 @@
+.spotlight-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80vh;
+    width: 80vw;
+  }
+  
+  @media (min-width: 768px) {
+    .spotlight-overlay {
+      width: 50vw;
+    }
+  }
+  
+  
+  .home-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .dark .home-container {
+    background-color: #000319;
+  }
+  
+ 
+  .background-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000319;
+    pointer-events: none;
+    mask-image: radial-gradient(ellipse at center, transparent 20%, black);
+  }
+  
+  .dark .background-overlay {
+    background-color: #000319;
+    mask-image: radial-gradient(ellipse at center, transparent 20%, black);
+  }
+  
+
+  .content-container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  
